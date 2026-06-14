@@ -20,7 +20,7 @@ public class ResidentsController {
     @Autowired
     ResidentsService residentsService;
 
-    @GetMapping("getAllResidents")
+    @GetMapping("/getAllResidents")
     public String getAll(Model model,HttpSession session){
        String username =(String) session.getAttribute("username");
         List<Residents> allResidents = residentsService.findAllResidents();
