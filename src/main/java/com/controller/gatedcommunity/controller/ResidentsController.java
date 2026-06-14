@@ -29,6 +29,11 @@ public class ResidentsController {
         return "allusers";
     }
 
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/new/login";
+    }
+
     @GetMapping("/signup")
     public String getPage(Model model){
         model.addAttribute("residents",new Residents());
