@@ -30,8 +30,9 @@ public class ResidentsController {
     }
 
     @GetMapping("/")
+    @ResponseBody
     public String home() {
-        return "redirect:/new/signup";
+        return "Home page working";
     }
 
     @GetMapping("/signup")
