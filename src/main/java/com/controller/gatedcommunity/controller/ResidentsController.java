@@ -31,7 +31,7 @@ public class ResidentsController {
 
     @GetMapping("/")
     public String home() {
-        return "redirect:/new/login";
+        return "redirect:/new/signup";
     }
 
     @GetMapping("/signup")
